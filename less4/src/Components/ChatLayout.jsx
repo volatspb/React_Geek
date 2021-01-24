@@ -13,9 +13,9 @@ export default class ChatLayout extends Component {
 
     this.state = {
       chats: [
-        { title: 'Ivan Makeev', messageList: [0, 1] },
-        { title: 'Антон Чепур', messageList: [] },
-        { title: 'Кирилл Ткаченко', messageList: [] },
+        { title: 'Антон', messageList: [0, 1] },
+        { title: 'Александр', messageList: [] },
+        { title: 'Евгения', messageList: [] },
       ],
       messages: [
         {
