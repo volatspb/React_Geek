@@ -32,7 +32,7 @@ export default class MessageField extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-if (prevState.messages.length < this.state.messages.length) {
+      if (prevState.messages.length < this.state.messages.length) {
       const { messages, overloadBot } = this.state;
       const lastSender = messages[messages.length - 1].sender;
       const preLastSender = messages[messages.length - 2].sender;
