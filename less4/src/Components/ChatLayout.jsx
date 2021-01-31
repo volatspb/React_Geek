@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Grid from '@material-ui/core/Grid';
-import Hidden from '@material-ui/core/Hidden';
+import Grid from '../../../less4/1/src/Containers/node_modules/@material-ui/core/Grid';
+import Hidden from '../../../less4/1/src/Containers/node_modules/@material-ui/core/Hidden';
 import PropTypes from 'prop-types';
 import MessageField from './MessageField';
 import ChatList from './ChatList';
@@ -13,7 +13,7 @@ export default class ChatLayout extends Component {
 
     this.state = {
       chats: [
-        { title: 'Антон', messageList: [0, 1] },
+        { title: 'Anton', messageList: [0, 1] },
         { title: 'Александр', messageList: [] },
         { title: 'Евгения', messageList: [] },
       ],
