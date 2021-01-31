@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import AppBar from '../../../less4/1/src/Containers/node_modules/@material-ui/core/AppBar';
-import Toolbar from '../../../less4/1/src/Containers/node_modules/@material-ui/core/Toolbar';
-import Typography from '../../../less4/1/src/Containers/node_modules/@material-ui/core/Typography';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 
 export default class ChatHeader extends Component {
   constructor(props) {
@@ -12,13 +12,13 @@ export default class ChatHeader extends Component {
   }
 
   render() {
-    const { title } = this.props;
+    const { chatId } = this.props;
 
     return (
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6">
-            {title}
+            {chatId}
           </Typography>
         </Toolbar>
       </AppBar>
@@ -27,5 +27,5 @@ export default class ChatHeader extends Component {
 }
 
 ChatHeader.propTypes = {
-  title: PropTypes.string,
+  chatId: PropTypes.number.isRequired,
 };
