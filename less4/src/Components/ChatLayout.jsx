@@ -13,7 +13,7 @@ export default class ChatLayout extends Component {
 
     this.state = {
       chats: [
-        { title: 'Антон', messageList: [0, 1] },
+        { title: 'Anton', messageList: [0, 1] },
         { title: 'Александр', messageList: [] },
         { title: 'Евгения', messageList: [] },
       ],
